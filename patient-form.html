@@ -58,6 +58,8 @@
                                 id="userid"
                                 name="userid"
                                 maxlength="20"
+                                minlength="5"
+                                size="20"
                                 required
                                 placeholder="Enter your User ID"
                             >
@@ -73,7 +75,10 @@
                                 id="password"
                                 name="password"
                                 maxlength="15"
+                                minlength="10"
+                                size="20"
                                 required
+                                placeholder="Enter password"
                             >    
                         </td>
                     </tr>
@@ -87,7 +92,10 @@
                                 id="repassword"
                                 name="repassword"
                                 maxlength="15"
+                                minlength="10"
+                                size"20"
                                 required
+                                placeholder="Enter password"
                             >    
                         </td>
                     </tr>
@@ -101,13 +109,14 @@
                     </tr> 
                     <tr class="form">
                         <td colspan="2" align="center">  
-                            <label for="firstname"> First Name (Max.30) </label>
+                            <label for="firstname"> First Name </label>
                             <input
                                 type="text"
                                 size="20"
                                 id="firstname"
                                 name="firstname"
                                 maxlength="30"
+                                minlength="2"
                                 required
                                 placeholder="Jane"
                             > 
@@ -120,13 +129,14 @@
                                 maxlength="1"
                                 placeholder="A"
                             >    
-                            <label for="lastname"> Last Name (Max.30)  </label>
+                            <label for="lastname"> Last Name </label>
                             <input
                                 type="text"
                                 size="20"
                                 id="lastname"
                                 name="lastname"
                                 maxlength="30"
+                                minlength="2"
                                 required
                                 placeholder="Doe"
                             >    
@@ -142,6 +152,7 @@
                                 id="male"
                                 name="gender"
                                 value="Male"
+                                required
                             >
                             Male
                             <input
@@ -182,6 +193,7 @@
                                 type="email"
                                 id="email"
                                 name="email"
+                                size="20"
                                 required
                                 placeholder="name@email.com"
                             >    
@@ -196,6 +208,7 @@
                                 type="tel"
                                 id="phone"
                                 name="phone"
+                                size="20"
                                 required
                                 placeholder="(713) 555-1212"
                             >    
@@ -211,6 +224,7 @@
                                 id="ssn"
                                 name="ssn"
                                 maxlength="11"
+                                size="20"
                                 required
                                 placeholder="000000000"
                             >    
@@ -234,6 +248,8 @@
                                 id="address1"
                                 name="address1"
                                 maxlength="30"
+                                minlength="5"
+                                size="20"
                                 required
                                 placeholder="1234 Main St"
                             >    
@@ -249,6 +265,7 @@
                                 id="address2"
                                 name="address2"
                                 maxlength="30"
+                                size="20"
                                 placeholder="Apt #"
                             >    
                         </td>
@@ -258,15 +275,20 @@
                             <label for="city"> City Name  </label>
                             <input
                                 type="text"
-                                size="10"
+                                size="20"
                                 id="city"
                                 name="city"
                                 maxlength="25"
+                                minlength="2"
                                 required
                                 placeholder="Anytown"
                             >
                             <label for="state"> State </label>  
-                            <select required>
+                            <select 
+                                id="state"
+                                name="state"
+                                required
+                            >
                                 <option value=""></option>
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
@@ -328,7 +350,7 @@
                             <label for="zip"> Zip Code </label>
                             <input
                                 type="text"
-                                size="10"
+                                size="20"
                                 id="zip"
                                 name="zip"
                                 maxlength="10"
@@ -357,6 +379,7 @@
                                 rows="3"
                                 cols="50"
                                 maxlength="250"
+                                minlength="5"
                                 required
                                 placeholder="Please provide details"
                             ></textarea>    
@@ -372,6 +395,7 @@
                                 id="vac_yes"
                                 name="vaccinated"
                                 value="yes"
+                                required
                             >
                             Yes
                             <input
@@ -435,6 +459,7 @@
                                 id="insur_yes"
                                 name="insurance"
                                 value="yes"
+                                required
                             >
                             Yes
                             <input
@@ -453,7 +478,7 @@
                     </tr> 
                     <tr class="form">
                         <td align="right">
-                            <label for="pain"> Pain Level (0-10) </label>
+                            <label for="pain"> Pain Level </label>
                         </td>
                         <td>
                             &nbsp;0
@@ -466,6 +491,8 @@
                                     max="10"
                                     step="1"
                                     value="5"
+                                    size="20"
+                                    required
                                 >    
                             10&nbsp;    
                         </td>

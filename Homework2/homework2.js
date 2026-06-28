@@ -2,7 +2,7 @@
     Name: Camila Oropeza Llindis  
     File: homework2.js
     Date Created: 06-22-2026
-    Date Updated: 
+    Date Updated: 06-28-2026
     Version: 1.0 
     Purpose: MIS 3371 Homework 2 to learn how to use JavaScript and create a patient form. 
 */

@@ -1,10 +1,10 @@
 /* 
     Name: Camila Oropeza Llindis  
-    File: homework2.js
-    Date Created: 06-22-2026
-    Date Updated: 06-28-2026
+    File: homework3.js
+    Date Created: 06-30-2026
+    Date Updated: 
     Version: 1.0 
-    Purpose: MIS 3371 Homework 2 to learn how to use JavaScript and create a patient form. 
+    Purpose: MIS 3371 Homework 3 to learn how to use JavaScript and create a patient form. 
 */
 
 //this is the JavaScript for today's date to showcase on the page//
@@ -13,10 +13,10 @@ document.getElementById("today").innerHTML = new Date().toLocaleDateString();
 //this is the JavaScript that connects to the display data button//
 function reviewInformation()
 {
-    var patientForm=document.getElementById("patientform");
-    var reviewOutput;
-    var datatype;
-    var i;
+    let patientForm=document.getElementById("patientform");
+    let reviewOutput;
+    let datatype;
+    let i;
 // Creates Table Headers//
     reviewOutput= "<h2> Please Review the Following Information </h2>";
     reviewOutput= reviewOutput + "<table class='output'>";
@@ -86,8 +86,8 @@ function closeReview()
 }
 
 // Displays the selected pain level
-var slider = document.getElementById("pain");
-var output = document.getElementById("painlevel");
+let slider = document.getElementById("pain");
+let output = document.getElementById("painlevel");
 
 output.innerHTML = slider.value;
 
@@ -99,16 +99,12 @@ slider.oninput = function()
 // Checks passwords, user ID, first name and last name
 function passwordentry()
 {
-    var passwordinput;
-    var passwordoutput;
-    var userid;
-    var firstname;
-    var lastname;
+    let passwordoutput;
 
-    passwordinput = document.getElementById("password").value;
-    userid = document.getElementById("userid").value.toLowerCase();
-    firstname = document.getElementById("firstname").value.toLowerCase();
-    lastname = document.getElementById("lastname").value.toLowerCase();
+    let passwordinput = document.getElementById("password").value;
+    let userid = document.getElementById("userid").value.toLowerCase();
+    let firstname = document.getElementById("firstname").value.toLowerCase();
+    let lastname = document.getElementById("lastname").value.toLowerCase();
 
     //Checks uppercase letters
     if (passwordinput.search(/[A-Z]/) < 0)
@@ -169,12 +165,9 @@ function passwordentry()
 
 // Checks if both passwords match
 function checkpassword2()
-{
-    var x;
-    var y;
-
-    x = document.getElementById("password").value;
-    y = document.getElementById("repassword").value;
+{ 
+    let x = document.getElementById("password").value;
+    let y = document.getElementById("repassword").value;
 
     if (x == y)
     {
@@ -189,11 +182,8 @@ function checkpassword2()
 //Makes sure user can't submit if passwords different
 function validatePasswords()
 {
-    var password1;
-    var password2;
-
-    password1 = document.getElementById("password").value;
-    password2 = document.getElementById("repassword").value;
+    let password1 = document.getElementById("password").value;
+    let password2 = document.getElementById("repassword").value;
 
     if (password1 != password2)
     {
@@ -207,10 +197,8 @@ function validatePasswords()
 // Checks phone number format
 function checkphone()
 {
-    var phoneinput;
-    var phoneoutput;
-
-    phoneinput = document.getElementById("phone").value;
+    let phoneinput = document.getElementById("phone").value;
+    let phoneoutput;
 
     // Checks if phone number is empty
     if (phoneinput == "")
@@ -233,10 +221,8 @@ function checkphone()
 // Checks Social Security Number format
 function checkssn()
 {
-    var ssninput;
-    var ssnoutput;
-
-    ssninput = document.getElementById("ssn").value;
+    let ssninput = document.getElementById("ssn").value;
+    let ssnoutput;
 
     // Checks if Social Security Number is empty
     if (ssninput == "")
@@ -259,10 +245,8 @@ function checkssn()
 // Checks email format
 function checkemail()
 {
-    var emailinput;
-    var emailoutput;
-
-    emailinput = document.getElementById("email").value;
+    let emailinput = document.getElementById("email").value;
+    let emailoutput;
 
     // Checks if email is empty
     if (emailinput == "")

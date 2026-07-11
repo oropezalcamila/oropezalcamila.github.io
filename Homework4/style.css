@@ -1,0 +1,151 @@
+/*
+    Name: Camila Oropeza Llindis
+    File: style.css
+    Date Created: 06-30-2026
+    Date Updated: 
+    Purpose: The styling of the Growing Together clinic web page
+*/
+    body
+{
+        background-color:#fff4ec;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:#8c2155;
+        padding-bottom:80px;
+}    
+    h1
+{
+        text-align:center;
+        color:#8c2155;
+        font-family:monospace;
+}
+    p
+{
+        color:#8c2155;
+        text-align:center;
+}
+    table.form, tr.form, td.form
+{
+        width:70%;
+        opacity:0.95;
+        background-color:#fff4ec;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:#8c2155;
+        padding:5px;
+        border-spacing:0px;
+        margin-left: auto;
+        margin-right:auto;
+}
+    #logo
+{
+        width:130px;
+        height:auto;
+}
+/* Sticky header adapted from W3Schools */
+    #header
+{
+    position:sticky;
+    top:0;
+    text-align:center;
+    background-color:#D5DDCF;
+    z-index:1000;
+}
+    #footer
+{
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:#D5DDCF;
+    text-align:center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+    a
+{
+    color:#9F84BD;
+}
+    a:visited
+{
+    color:#8c2155;
+}
+.slider
+{
+    width:120px;
+}
+    .output
+{
+        width:30%;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:20px;
+        margin-bottom:20px;
+        border-collapse:collapse;
+        background-color:#fff4ec;
+        color:#8c2155;
+}
+
+    .output th
+{
+        border:2px solid #8c2155;
+        padding:8px;
+        background-color:#D5DDCF;
+        text-align:center;
+        white-space:nowrap;
+}
+
+    .output td
+{
+        border:1px solid #8c2155;
+        padding:8px;
+        text-align:center;
+        background-color:#EEF5EA;
+        white-space:nowrap;
+}
+/* Code for Pop-Up learned and adapted from W3Schools */
+    .reviewPopup
+{
+        display: none;
+        position: fixed;
+
+        top: 5%;
+        left: 15%;
+        width: 70%;
+        max-height: 80%;
+
+        background-color: #fff4ec;
+        border: 3px solid #8c2155;
+        padding: 20px;
+
+        overflow: auto;
+        z-index: 9;
+}
+    .reviewPopup h2
+{
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Code Password Messages */
+    .message
+{
+    color: #5B7FA3;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 5px;
+}
+/* Code for iFrame learned and adapted from W3Schools */
+iframe
+{
+    display:block;
+    width:70%;
+    height:110px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:20px;
+    border:1px solid #D5DDCF;
+    border-radius:8px;
+}
+/*
+Sources Referenced:
+MIS 3371 CSS examples provided by Professor Jake Messinger.
+W3Schools CSS tutorial: https://www.w3schools.com/css/
+*/

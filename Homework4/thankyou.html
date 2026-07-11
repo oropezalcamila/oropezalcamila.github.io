@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+Name: Camila Oropeza Llindis
+File: thankyou.html
+Date Created: 06-30-2026
+Date Updated: 
+Purpose: Thank you page displayed after patient form submission
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Thank you </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <div id="header">
+            <table width="100%"> 
+                <tr>
+                    <td>
+                        <img
+                            id="logo"
+                            src="clinic.logo.png"
+                            alt="Growing Together Logo"
+                        >
+                    </td>
+                    <td>
+                        <h1> Growing Together Clinic </h1>
+                        <p> Where we help you grow into your healthiest version </p>
+                    </td>
+                    <td align="right">
+                        Today's Date:
+                        <span id="today"> Date Goes Here </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <!-- Content -->
+        <div id="body">
+            <h2 align="center">
+                Thank you for your submission. We will be contacting you shortly.
+            </h2>
+        </div>
+        <!-- Footer -->
+        <div id="footer">
+            <hr>
+            <table width="100%">
+                <tr>
+                    <td align="left">
+                        Growing Together Clinic
+                        <br>
+                        1234 Feel Good Street
+                        <br>
+                        Houston, TX 77002
+                    </td>
+                    <td width="33%" align="center">
+                        <button
+                            type="button"
+                            onclick="location.href='mailto:contact@growingtogetherclinic.com'">
+                            Contact Us
+                        </button>
+                    </td>
+                    <td align="right">
+                        <a href="https://www.facebook.com">
+                            Facebook
+                        </a>
+                        <br>
+                        <a href="https://www.instagram.com">
+                            Instagram
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+<!--
+Source: JavaScript for date adapted from homework4.html page example and modified for MIS 3371 Homework 4.
+-->
+        <script>
+            document.getElementById("today").innerHTML = new Date().toLocaleDateString();
+        </script>
+    </body>
+</html>
+<!-- End of thankyou.html -->
